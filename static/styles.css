@@ -1,0 +1,185 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navcolor {
+    background-color: #293462;
+    background: linear-gradient(90deg, rgba(41, 52, 98, 1) 0%, rgba(86, 29, 34, 1) 73%, rgba(242, 76, 76, 1) 100%);
+}
+
+.navbar-brand {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+}
+
+.navbar a {
+    color: #FFF2F2;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #FFF2F2;
+}
+
+.nav-container {
+    padding-left: 40px;
+    padding-right: 150px;
+}
+
+body {
+    height: 80vH;
+}
+
+:root {
+    --bs-body-bg: #fff2f2;
+}
+
+.header .row>* {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+}
+
+/* .header .row {
+    margin-bottom: 80px;
+} */
+
+.header .div,
+.header>.img {
+    height: 100%;
+}
+
+.heading h1 {
+    color: #293462;
+    font-weight: 700;
+}
+
+.heading p {
+    color: gray;
+}
+
+.card {
+    border: none;
+}
+
+.feature,
+.dashboard-payment,
+.payment,
+.utility,
+.about,
+.testimony {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+}
+
+.feature .card {
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.dashboard-payment {
+    width: 75%;
+}
+
+.dashboard-payment .card {
+    border-radius: 20px;
+    height: 190px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.dashboard-payment .card img {
+    width: 90px;
+    height: 90px;
+}
+
+.dashboard-payment {
+    cursor: pointer;
+}
+
+.feature .card img,
+.payment .card img {
+    width: 250px;
+    height: 250px
+}
+
+.feature h3,
+.payment h3,
+.utility h3,
+.utility h5,
+.dashboard-payment h3,
+.dashboard-payment h6,
+.testimony h3 {
+    color: #293462;
+}
+
+.payment p,
+.dashboard-payment p,
+.utility p {
+    color: gray;
+}
+
+.payment .card {
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #293462;
+    padding: 3rem 2rem 1rem 3rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#signUpButton,
+#loginButton {
+    background-color: #293462;
+}
+
+.formpage {
+    border-radius: 15px;
+    margin-top: 75px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#paysub,
+#image {
+    background-color: #293462;
+    color: #ffffff;
+}
+
+#fail,
+#back,
+#success,
+#wallet,
+#transaction,
+#accountsub,
+#phonesub,
+#bill-button {
+    background-color: #293462;
+    color: #ffffff;
+}
+
+#username {
+    text-transform: capitalize;
+}
+
+#username img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.payment-modal {
+    margin-top: 180px;
+}
