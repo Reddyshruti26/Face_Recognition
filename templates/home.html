@@ -1,0 +1,224 @@
+<!--This is the home page-->
+<!--user can login, register-->
+{% extends "base.html" %}
+{% block head %}
+<nav class="navbar navbar-expand-lg navcolor">
+    <div class="container nav-container">
+        <a class="navbar-brand" href="/">EasePay</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container header">
+    <div class="row h-100 mt-5 pt-5 pb-5 mb-5">
+        <div class="col-sm-6 heading justify-content-center align-items-center p-5">
+            <h1 class="display-1 mt-2">
+                EasePay
+                <br />
+                with Face Recognition
+            </h1>
+            <p class="fs-3">Payment made Ease. Pay any utiliy bills conveniently and securely using face
+                recognition.</p>
+        </div>
+        <div class="col-sm-6">
+            <img src="/static/assets/cover.png" class="img-fluid" alt="EasePay">
+        </div>
+    </div>
+    <div class="row mt-5 feature p-5">
+        <h3 class="mb-1">Features</h3>
+        <div class="col p-2 d-flex justify-content-center">
+            <div class="card w-75 p-4">
+                <img src="/static/assets/fast.svg" class="card-img-top" alt="fast">
+                <div class="card-body">
+                    <h5 class="card-title">Fast</h5>
+                    <p class="card-text">Pay anywhere with the speed
+                        you never experienced before.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-2 d-flex justify-content-center">
+            <div class="card w-75 p-4">
+                <img src="/static/assets/safe.svg" class="card-img-top" alt="secure">
+                <div class="card-body">
+                    <h5 class="card-title">Secure</h5>
+                    <p class="card-text">Two step verification with highly
+                        reliable service with end-to-end
+                        encryption. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col p-2 d-flex justify-content-center">
+            <div class="card w-75 p-4">
+                <img src="/static/assets/efficient.svg" class="card-img-top" alt="efficient">
+                <div class="card-body">
+                    <h5 class="card-title">Efficient</h5>
+                    <p class="card-text">Pay anywhere with the speed
+                        you never experienced before.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row payment mt-5 p-5">
+        <h3>Payment</h3>
+        <p>Make your trasaction more secure with 2 step verification. Choose any of the options below to make your
+            payment.</p>
+        <div class="col p-2">
+            <div class="card w-100 p-5">
+                <img src="/static/assets/qr.svg" class="card-img-top" alt="qr code">
+                <div class="card-body">
+                    <h6 class="card-title">QR Scan</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="card w-100 p-5">
+                <img src="/static/assets/card.svg" class="card-img-top" alt="card">
+                <div class="card-body">
+                    <h6 class="card-title">Card</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="card w-100 p-5">
+                <img src="/static/assets/mobile_pay.svg" class="card-img-top" alt="UPI / Mobile Pay">
+                <div class="card-body">
+                    <h6 class="card-title">UPI / Mobile Pay</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row utility mt-5 p-5">
+        <h3>Pay Bills</h3>
+        <p>Paying bills have become easier and safe. Clear your dues and earn rewards for every transaction.</p>
+        <div class="col-sm-6">
+            <img src="/static/assets/online_payments.svg" class="img-fluid" alt="EasePay">
+        </div>
+        <div class="col-sm-6 p-5">
+            <div class="recharge mb-3">
+                <h5>Recharge</h5>
+                <div class="mt-2">
+                    <button type="button" class="btn btn-outline-secondary">Recharge Mobile</button>
+                    <button type="button" class="btn btn-outline-secondary">Rent Payment</button>
+                    <button type="button" class="btn btn-outline-secondary">ElectricityBill</button>
+                    <button type="button" class="btn btn-outline-secondary">DTH Connection</button>
+                </div>
+                <div class="mt-2">
+                    <button type="button" class="btn btn-outline-secondary">Gas Cylinder</button>
+                    <button type="button" class="btn btn-outline-secondary">Water Bill</button>
+                    <button type="button" class="btn btn-outline-secondary">Metro Recharge</button>
+                </div>
+            </div>
+            <div class="bill mb-3 mt-3">
+                <h5>Services</h5>
+                <div class="mt-2">
+                    <button type="button" class="btn btn-outline-secondary">Pay Loan</button>
+                    <button type="button" class="btn btn-outline-secondary">Municipal Tax</button>
+                    <button type="button" class="btn btn-outline-secondary">Donation</button>
+                    <button type="button" class="btn btn-outline-secondary">Fastag Recharge</button>
+                    <button type="button" class="btn btn-outline-secondary">Devotion</button>
+                </div>
+                <div class="mt-2">
+                    <button type="button" class="btn btn-outline-secondary">Insurance</button>
+                    <button type="button" class="btn btn-outline-secondary">Toll Tax</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row testimony mt-5 mb-5 p-5">
+        <h3>Testimonials</h3>
+        <div class="card">
+            <div class="card-body">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Preeti Kumari</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr />
+        <div class="card">
+            <div class="card-body">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Suresh Kumar</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="content">
+                    <ul>
+                        <li><strong>Our Team</strong></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Investor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <ul>
+                        <li><strong>Products</strong></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Resource</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <ul>
+                        <li><strong>Connect</strong></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <ul>
+                        <li><strong>Social</strong></li>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-4 mb-1">&copy2019 EasePay, INC. ALL RIGHTS RESERVED. PRIVACY POLICY | TERMS OF USE
+        </p>
+    </div>
+</div>
+{% endblock %}
+{% block body %}
+{% endblock %}

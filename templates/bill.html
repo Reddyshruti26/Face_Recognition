@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navcolor">
+    <div class="container nav-container">
+        <a class="navbar-brand" href="/">EasePay</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="username" href="{{ url_for('profile') }}"><img src="/static/assets/user.png"
+                            class="img-fluid" />Hey, {{ username }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signout') }}">Signout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container w-100 h-100 d-flex justify-content-center align-items-center">
+    <div class="row w-80 formpage bg-white p-5">
+        <div class="col">
+            <img src="/static/assets/bill.svg" class="img-fluid" alt="EasePay">
+        </div>
+        <div class="col p-5">
+            <h1 class="text-center display-4 pb-3">Fill the Information</h1>
+            <form name="login_form">
+                <div class="form-group pb-2">
+                    <label for="bill" class="form-label">Associated Bill number:</label>
+                    <input type="tel" name="bill" autofocus class="field form-control" id="bill" required>
+                </div>
+
+
+                <p class="error error--hidden"></p>
+
+                <button type="button" class="btn btn-primary px-3" id="bill-button">Pay Bill</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

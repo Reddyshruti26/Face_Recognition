@@ -1,0 +1,47 @@
+<!--user can login here using form-->
+{% extends "base.html" %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navcolor">
+    <div class="container nav-container">
+        <a class="navbar-brand" href="/">EasePay</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container w-100 h-100 d-flex justify-content-center align-items-center">
+    <div class="row w-80 formpage bg-white p-5">
+        <div class="col">
+            <img src="/static/assets/login.svg" class="img-fluid" alt="EasePay">
+        </div>
+        <div class="col p-5">
+            <h1 class="text-center display-4 pb-3">Log into Account</h1>
+            <form name="login_form">
+                <div class="form-group pb-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" autofocus class="field form-control" id="email" required>
+                </div>
+
+                <div class="form-group pb-2">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="field form-control" id="password" required>
+                </div>
+
+                <p class="error error--hidden"></p>
+
+                <button type="button" class="btn btn-primary px-3" id="loginButton">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

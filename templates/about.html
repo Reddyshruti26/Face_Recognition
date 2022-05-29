@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navcolor">
+    <div class="container nav-container">
+        <a class="navbar-brand" href="/">EasePay</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signup') }}">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row about">
+        <h1><b>EASEPAY</b>: Secured transactions using Face-Recognition app</h1>
+
+        <p>Online payments are one of the sought after options nowadays used for paying and receiving money. Users are
+            able to do online transactions with just a button click or touch. With the power of fast internet, the
+            process of payments are made more easy and accessible to all.
+            The problems associated with offline payment methods are: <br>
+            There is fear of loosing your credit and debit cards <br>
+            The need to travel with cash<br>
+            Different payments such as recharge, gas bills at different platforms<br>
+            It doesn't provide users with immediate confirmation of transaction</p><br>
+
+        <p>The solution to all these above problems are "online and secured" transactions. According to Outlook India,
+            UPI has crossed a big milestone by crossing the $1-trillion mark in transactional value in the last
+            financial year. Both the volume and value of UPI transactions have doubled in a year's time, which is
+            testimony to its success in India.
+            Problem:</p>
+        <p>With such rise in online payments and accessibility to this technology, there is also the risk of hacking the
+            user's data and result in frauds and scam. The proposal to solve this problem was to introduce biometric
+            i.e. fingerprint authentication and use a secret pin set by the user.
+            Though this helped us solve the majority of problem, but the problem now lies with the usability. Nowadays,
+            most of the phones have the features of fingerprint scanning, but still there are phones in which these
+            features are not yet implemented, for example Realme C20 and older smart phones.
+            To have the secured payments through these phones, we have build a web application with the functionality of
+            QR scanner and reward, in which the transactions are secured by using face recognition.</p>
+        <p><b>Our Solution:</b></p>
+        <p>I have approached this problem using face recognition technology and implemented that in our application.
+            EASEPAY is an application which accessible and readable for the users of all the age groups. This
+            application is easy to navigate through and make payments.
+            I have used Open-cv for recognizing the different faces and along with it we have implemented
+            face_recognition library in addition with dlib. With the power of python, Flask framework and Mongodb, I was
+            able to put forward an applicable which will be able to solve the problems in existing payment systems.</p>
+        <p><b>Technology used:</b></p>
+        <ul>
+            <li>Python</li>
+            <li>Mongodb</li>
+            <li>Open CV</li>
+            <li>Face-recognition</li>
+            <li>Jquery and Ajax</li>
+            <li>Flask Framework</li>
+            <li>Bootstrap Framework</li>
+        </ul>
+
+        <p>EASEPAY have the following feature which distinguish it from others:</p>
+
+        <ul>
+            <li>
+                It is a two step verification process to make a desired payment:
+                <br>
+                (a). The user first need to be signed-in or logged in into their easepay account using email and
+                password. The password is encrypted using passlib.hash. During signup process, the user need to capture
+                their photo and it will saved in images/ folder. <br>
+                (b). The user after entering the amount, needs to go through an face verification process, in which the
+                command prompt will open up and the user's face in database is compared with the data coming from
+                webcam. <br>
+            </li>
+            <li>
+                The user are also able to choose from a variety of options for payment:
+                <br>
+                (a) QR code: The user can scan a QR code present with them and redireted to the details page <br>
+                (b) Using phone or account number of the reciever: The user needs to enter the phone or account number
+                of the reciever to redirect to the details page. <br>
+                (c) Other payments: These include payments such as recharge of internet or phone, gas bills and
+                insurance. Here, the user needs to provied the bill number to make the disired transaction. <br>
+            </li>
+            <li>
+                After the user have entered the amount to be paid, the user is redirected to a page for face
+                recognition which is command prompt. Here, the verification is done and the user is directed to
+                payment successful or unsuccessful page.
+            </li>
+            <li>
+                The user can earn rewards, which is special coins with every payment done.
+            </li>
+            <li>
+                The user can check their profile.
+            </li>
+            <li>
+                The user can also check their transaction history in future(not yet implemented in easepay).
+            </li>
+        </ul>
+        <p><b>Future Scope:</b></p>
+        <p>Easepay can be improved to view the transaction history which is still not a working feature in the
+            application. The command prompt for face capture and recognition can be embedded into the web browser.</p>
+        <p><b>Conclusion:</b></p>
+        <p>Easepay can solve many of the problems faced in the world of online payment. It helps the users to make
+            secured payments through many of the features such as, qr scan, two step verification etc.</p>
+    </div>
+</div>
+
+
+{% endblock %}

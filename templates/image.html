@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navcolor">
+    <div class="container nav-container">
+        <a class="navbar-brand" href="/">EasePay</a>
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="username" href="{{ url_for('profile') }}"><img src="/static/assets/user.png"
+                            class="img-fluid" />Hey, {{ username }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('signout') }}">Signout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container w-100 h-100 d-flex justify-content-center align-items-center">
+    <div class="row w-80 formpage bg-white p-5">
+        <div class="col">
+            <img src="/static/assets/capture.svg" class="img-fluid" alt="EasePay">
+        </div>
+        <div class="col p-5">
+            <h1 class="text-center display-4 pb-3">Capture your Photo</h1>
+            <h3>Instructions</h3>
+            <ul>
+                <li>The lighting in the room must be bright enough to be considered “daylight” quality.</li>
+                <li>Sit still while taking a photograph</li>
+                <li>Please capture only one photograph</li>
+                <li>Press "SPACE BAR" to capture a photo</li>
+            </ul>
+            <button type="button" id="image" class="btn btn-primary px-3">Capture</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
